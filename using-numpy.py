@@ -128,17 +128,13 @@ print('x'*4)
 print(x)
 print('x'*4)
 
-import pandas
 from pandas import Series
-from datetime import datetime
-import pandas as pd
-import matplotlib.pyplot as pyplot
 from matplotlib import pyplot
 series = Series.from_csv('data.txt')
-print(series.head())
 pyplot.plot(series)
 pyplot.show()
 
+#DJANGO APP
 fig = Figure()
 canvas = FigureCanvas(fig)
 response = HttpResponse( content_type = 'image/png')
